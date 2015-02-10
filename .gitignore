@@ -1,0 +1,7 @@
+*.sqlite3
+*.pyc
+local_settings.py
+Scripts
+Lib
+Include
+pip-selfcheck.json
