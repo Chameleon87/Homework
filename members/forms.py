@@ -26,3 +26,7 @@ class CreateUser(ModelForm):
         if self.cleaned_data['password'] != self.cleaned_data['password1']:
             raise forms.ValidationError("Passwords do not match!")
         return self.cleaned_data
+        
+class LoginForm(forms.Form):
+        username = forms.CharField(label=(u'User Name'))
+        password = forms.CharField(label=(u'Password'), widget=forms.PasswordInput(render_value=False))
