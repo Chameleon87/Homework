@@ -4,7 +4,7 @@ from django.forms import ModelForm
 from models import Member
 from django.contrib.auth.forms import UserCreationForm
 
-class CreateUser(ModelForm):
+class CreateMember(ModelForm):
     username        = forms.CharField(label=(u'User Name'))
     email           = forms.EmailField(label=(u'Email Address'))
     password        = forms.CharField(label=(u'Password'), widget=forms.PasswordInput(render_value=False))
